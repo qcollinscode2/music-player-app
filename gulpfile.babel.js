@@ -1,0 +1,52 @@
+// Module variables.
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var browserSync = require('browser-sync');
+var gulpBabel = require('gulp-babel');
+var gulpServer = require('http-server');
+var gulpCompass = require('gulp-compass');
+var gulpConcat = require('gulp-concat');
+var gulpImageMin = require('gulp-imagemin');
+var gulpjsHint = require('gulp-jshint');
+var gulpOpen = require('gulp-open');
+var gulpPlumber = require('gulp-plumber');
+var gulpRename = require('gulp-rename');
+var gulpSass = require('gulp-sass');
+var gulpHTMLmin = require('gulp-htmlmin');
+var gulpAutoPrefixer = require('gulp-autoprefixer');
+var gulpNano = require('gulp-cssnano');
+var del = require('del');
+var gulpCache = require('gulp-cache');
+var gulpUglify = require('gulp-uglify');
+var http = require('http');
+var port = 3000;
+// Directory variables.
+var cssPath = "src/assets/styles/css/";
+var sassPath = "src/assets/styles/sass/";
+var jsPath = "src/assets/js/main/";
+var jsPath2 = "src/assets/js/es6/";
+var minJsPath = 'src/assets/js/main/min/';
+var minCssPath = 'src/assets/styles/css/min/';
+var minImgPath = 'src/assets/img/min/';
+var imgPath = "src/assets/img/";
+var htmlPath = "src/";
+var minHtmlPath = 'src/min/';
+
+// File variables.
+var compassConfig = './config.rb';
+var mainSassFile = 'mainstyle.sass';
+var cssFile = 'mainstyle.css';
+var jsFile = 'main.js';
+var jsFile2 = 'maines6.js';
+var html = 'index.html';
+var anyJsFile = jsPath + '**/*.js';
+var anyJsFile2 = jsPath2 + '**/*.js';
+var anyHtmlFile = htmlPath + "**/*.html";
+var anyMinJsFile = minJsPath + '**/*.min.js';
+var anyCssFile = cssPath + '**/*.css';
+var anySassFile = sassPath + '**/*.sass';
+var anyImgFile = imgPath + '**/*.*';
+var notMinJsFile = '!src/assets/js/**/*.min.js';
+var notMinCssFile = '!src/assets/styles/css/**/*.min.css';
+var notMinHtmlFile = '!src/**/*.min.html';
+var notMinImgFile = '!src/assets/img/**/*.min.*';
