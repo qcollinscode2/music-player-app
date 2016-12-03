@@ -31,6 +31,28 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+.list_num {
+  color: white;
+  font-size: 1.7em;
+  align-self: center;
+}
+
+.title_artist {
+  h1 {
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    font-weight: 100;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+.icons {
+  color: white;
+  text-align: center;
+}
+
 .sec1 {
   
 }

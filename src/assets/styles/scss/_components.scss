@@ -25,10 +25,10 @@
   }
   .wave {
     position: absolute;
-    height: 5em;
+    height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(30, 30, 30, 0.6);
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 70%);
   }
 }
 
@@ -41,6 +41,7 @@
   box-shadow: 0px -7px 17px black;
   @include flex(row, flex-end);
   position: relative;
+  border-bottom: 0.3em solid rgba(160, 160, 160, 1);
   .img_preview {
     height: 15em;
     width: 19em;
@@ -80,10 +81,31 @@
 }
 // Music Player List
 
-.sec2 {
+.list_container {
   background-color: rgba(70,70,70,1);
-  @include layout_padding;
   height: 29em;
   @include flex(column, space-around);
   box-shadow: 0px 17px 80px black;
+  li {
+    @include flex(row, flex-start);
+    @include layout_padding;
+    height: 100%;
+    h1 {
+      margin-bottom: 0.09em;
+    }
+    &:nth-child(2), &:nth-child(4) {
+      background-color: rgba(30, 30, 30, 1);
+    }
+    .list_num {
+      min-width: 12%;
+    }
+    .title_artist {
+      width: 81%;
+      min-width: 74%;
+    }
+    .icons {
+      @include flex(column, space-around);
+      min-width: 8%;
+    }
+  }
 }
