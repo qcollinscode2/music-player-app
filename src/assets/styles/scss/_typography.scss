@@ -8,4 +8,33 @@ h1, h2, h3, h4, h5, p {
 
 * {
   font-family: arial, 'open sans';
+  list-style: none;
+}
+
+.musicplayer_header {
+  text-align: center;
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: 0.1em;
+    font-weight: 700;
+    z-index: 8;
+    padding-top: 0.8em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    outline: 1px solid transparent;
+    text-shadow: 1px 1px 20px black;
+  }
+  p {
+    font-size: 2em;
+    z-index: 8;
+    text-shadow: 1px 1px 20px black;
+  }
+}
+
+.sec1 {
+  
+}
+
+.sec2 {
+  
 }

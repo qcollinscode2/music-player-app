@@ -14,45 +14,127 @@ h1, h2, h3, h4, h5, p {
   color: white; }
 
 * {
-  font-family: arial, 'open sans'; }
+  font-family: arial, 'open sans';
+  list-style: none; }
+
+.musicplayer_header {
+  text-align: center; }
+  .musicplayer_header h1 {
+    font-size: 2.3em;
+    margin-bottom: 0.1em;
+    font-weight: 700;
+    z-index: 8;
+    padding-top: 0.8em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    outline: 1px solid transparent;
+    text-shadow: 1px 1px 20px black; }
+  .musicplayer_header p {
+    font-size: 2em;
+    z-index: 8;
+    text-shadow: 1px 1px 20px black; }
 
 body {
-  background-color: rgba(30, 30, 30, 0.7); }
+  background-color: rgba(30, 30, 30, 0.7);
+  background-image: url(../../img/massivedoor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .musicplayer_container {
   position: relative;
   width: 50%;
   min-width: 50%;
-  background-color: gray;
+  background-color: transparent;
   margin: 0 auto;
-  box-shadow: 1px 10px 150px black;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  overflow: hidden; }
+  box-shadow: 1px 12px 140px black;
+  border-radius: 19px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden; }
 
 .wrapper {
-  padding: 6em 0.6em; }
+  padding: 1.5em 0.6em; }
 
 .musicplayer_header {
-  padding: 1em 1em;
   height: 18em;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  border-top-left-radius: 16.3px;
+  border-top-right-radius: 16.3px;
+  overflow: hidden; }
+  .musicplayer_header::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 1.3% 4.4%;
+    border-top-left-radius: 1.4% 4.2%;
+    background-image: url(../../img/johnlockealbum.min.jpg);
+    background-repeat: no-repeat;
+    background-size: 1080px auto;
+    -webkit-filter: blur(50px);
+    /* Chrome, Opera, etc. */
+    filter: blur(5px);
+    /* Firefox 35+, eventually all */
+    z-index: -2; }
+  .musicplayer_header .wave {
+    position: absolute;
+    height: 5em;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.6); }
 
 .sec1 {
   background-color: #191919;
   padding: 1em 1em;
-  height: 10em;
+  height: 13em;
   box-shadow: 0px -7px 17px black;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative; }
+  .sec1 .img_preview {
+    height: 15em;
+    width: 19em;
+    position: absolute;
+    left: 0;
+    top: -6.5em;
+    background-color: dimgrey;
+    background-image: url(../../img/johnlockealbum.min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 75px black;
+    border-radius: 15px;
+    margin-left: 5em; }
+  .sec1 .musicplayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 4em; }
+    .sec1 .musicplayer .musicplayer_timebarContainer {
+      background-color: lightgrey;
+      height: 0.5em;
+      width: 24em;
+      border-radius: 15px;
+      box-shadow: 0px 0px 18.1px 0.1px rgba(0, 0, 0, 0.5); }
+      .sec1 .musicplayer .musicplayer_timebarContainer .timebar {
+        height: 100%;
+        width: 50%;
+        border-radius: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: #3c3c3c;
+        transition: width 60s ease;
+        border-radius: 15px; }
 
 .sec2 {
   background-color: #464646;
   padding: 1em 1em;
-  height: 21em;
+  height: 29em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

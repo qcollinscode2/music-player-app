@@ -1,19 +1,23 @@
 body {
   background-color: rgba(30, 30, 30, 0.7);
+  background-image: url(../../img/massivedoor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .musicplayer_container{
   position: relative;
   width: 50%;
   min-width: 50%;
-  background-color: gray;
+  background-color: transparent;
   @include center;
-  box-shadow: 1px 10px 150px black;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  box-shadow: 1px 12px 140px black;
+  @include radius;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .wrapper {
-  padding: 6em 0.6em;
+  padding: 1.5em 0.6em;
 }

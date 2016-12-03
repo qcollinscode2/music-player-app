@@ -11,3 +11,12 @@
   flex-direction: $direction;
   justify-content: $justify;
 }
+
+@mixin radius {
+ border-radius: 19px;
+}
+
+@mixin radiusTLR {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
