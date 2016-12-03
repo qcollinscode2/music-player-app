@@ -34,6 +34,23 @@ h1, h2, h3, h4, h5, p {
     z-index: 8;
     text-shadow: 1px 1px 20px black; }
 
+.list_num {
+  color: white;
+  font-size: 1.7em;
+  align-self: center; }
+
+.title_artist h1 {
+  font-size: 1.7em;
+  letter-spacing: 0.04em;
+  font-weight: 100; }
+
+.title_artist p {
+  font-size: 1em; }
+
+.icons {
+  color: white;
+  text-align: center; }
+
 body {
   background-color: rgba(30, 30, 30, 0.7);
   background-image: url(../../img/massivedoor.jpg);
@@ -83,10 +100,10 @@ body {
     z-index: -2; }
   .musicplayer_header .wave {
     position: absolute;
-    height: 5em;
+    height: 100%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(30, 30, 30, 0.6); }
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 70%); }
 
 .sec1 {
   background-color: #191919;
@@ -96,7 +113,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: relative; }
+  position: relative;
+  border-bottom: 0.3em solid #a0a0a0; }
   .sec1 .img_preview {
     height: 15em;
     width: 19em;
@@ -131,13 +149,32 @@ body {
         transition: width 60s ease;
         border-radius: 15px; }
 
-.sec2 {
+.list_container {
   background-color: #464646;
-  padding: 1em 1em;
   height: 29em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   box-shadow: 0px 17px 80px black; }
+  .list_container li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1em 1em;
+    height: 100%; }
+    .list_container li h1 {
+      margin-bottom: 0.09em; }
+    .list_container li:nth-child(2), .list_container li:nth-child(4) {
+      background-color: #1e1e1e; }
+    .list_container li .list_num {
+      min-width: 12%; }
+    .list_container li .title_artist {
+      width: 81%;
+      min-width: 74%; }
+    .list_container li .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-width: 8%; }
 
 /*# sourceMappingURL=main.css.map */
