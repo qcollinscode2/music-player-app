@@ -4,6 +4,11 @@ h1, h2, h3, h4, h5, p {
 
 .musicplayer {
   color: white;
+  span {
+    text-align: center;
+    font-size: 1.3em;
+    
+  }
 }
 
 * {
@@ -35,6 +40,7 @@ h1, h2, h3, h4, h5, p {
   color: white;
   font-size: 1.7em;
   align-self: center;
+  font-weight: 100;
 }
 
 .title_artist {
@@ -49,8 +55,29 @@ h1, h2, h3, h4, h5, p {
 }
 
 .icons {
-  color: white;
+  color: rgba(50,50,50,1);
   text-align: center;
+  font-size: 1.6em;
+}
+
+.ico1 {
+ color: rgba(20, 20, 20, 0.6);  
+}
+
+.ico2 {
+ color: rgba(220, 220, 220, 0.4);  
+}
+
+.ico3 {
+  @extend .ico1;
+}
+
+.ico4 {
+ color: rgba(220, 220, 220, 0.4);  
+}
+
+.ico5 {
+  @extend .ico1;
 }
 
 .sec1 {

@@ -67,6 +67,13 @@
       width: 24em;
       border-radius: 15px;
       box-shadow: 0px 0px 18.1px 0.1px rgba(0, 0, 0, 0.5);
+      position: relative;
+      span {
+        position: absolute;
+        top: -33px;
+        width: 100%;
+        display: block;
+      }
       .timebar {
         height: 100%;
         width: 50%;
@@ -83,7 +90,7 @@
 
 .list_container {
   background-color: rgba(70,70,70,1);
-  height: 29em;
+  
   @include flex(column, space-around);
   box-shadow: 0px 17px 80px black;
   li {
@@ -97,15 +104,23 @@
       background-color: rgba(30, 30, 30, 1);
     }
     .list_num {
-      min-width: 12%;
+      min-width: 8%;
+      margin-left: 0.6em;
+      padding-left: 0.6em;
     }
     .title_artist {
       width: 81%;
       min-width: 74%;
+      margin-left: 0.3em;
     }
     .icons {
       @include flex(column, space-around);
-      min-width: 8%;
+      min-width: 0%;
+      margin: 0em 1em;
+      i {
+        margin-bottom: 0.2em;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -12,6 +12,9 @@ h1, h2, h3, h4, h5, p {
 
 .musicplayer {
   color: white; }
+  .musicplayer span {
+    text-align: center;
+    font-size: 1.3em; }
 
 * {
   font-family: arial, 'open sans';
@@ -37,7 +40,8 @@ h1, h2, h3, h4, h5, p {
 .list_num {
   color: white;
   font-size: 1.7em;
-  align-self: center; }
+  align-self: center;
+  font-weight: 100; }
 
 .title_artist h1 {
   font-size: 1.7em;
@@ -48,8 +52,18 @@ h1, h2, h3, h4, h5, p {
   font-size: 1em; }
 
 .icons {
-  color: white;
-  text-align: center; }
+  color: #323232;
+  text-align: center;
+  font-size: 1.6em; }
+
+.ico1, .ico3, .ico5 {
+  color: rgba(20, 20, 20, 0.6); }
+
+.ico2 {
+  color: rgba(220, 220, 220, 0.4); }
+
+.ico4 {
+  color: rgba(220, 220, 220, 0.4); }
 
 body {
   background-color: rgba(30, 30, 30, 0.7);
@@ -139,7 +153,13 @@ body {
       height: 0.5em;
       width: 24em;
       border-radius: 15px;
-      box-shadow: 0px 0px 18.1px 0.1px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 0px 18.1px 0.1px rgba(0, 0, 0, 0.5);
+      position: relative; }
+      .sec1 .musicplayer .musicplayer_timebarContainer span {
+        position: absolute;
+        top: -33px;
+        width: 100%;
+        display: block; }
       .sec1 .musicplayer .musicplayer_timebarContainer .timebar {
         height: 100%;
         width: 50%;
@@ -151,7 +171,6 @@ body {
 
 .list_container {
   background-color: #464646;
-  height: 29em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -167,14 +186,21 @@ body {
     .list_container li:nth-child(2), .list_container li:nth-child(4) {
       background-color: #1e1e1e; }
     .list_container li .list_num {
-      min-width: 12%; }
+      min-width: 8%;
+      margin-left: 0.6em;
+      padding-left: 0.6em; }
     .list_container li .title_artist {
       width: 81%;
-      min-width: 74%; }
+      min-width: 74%;
+      margin-left: 0.3em; }
     .list_container li .icons {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      min-width: 8%; }
+      min-width: 0%;
+      margin: 0em 1em; }
+      .list_container li .icons i {
+        margin-bottom: 0.2em;
+        cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
