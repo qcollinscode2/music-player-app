@@ -1,0 +1,13 @@
+@mixin layout_padding {
+  padding: 1em 1em;
+}
+
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin flex($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}

@@ -1,0 +1,27 @@
+// Music Player Header
+
+.musicplayer_header {
+  @include layout_padding;
+  height: 18em;
+  @include flex(column, center);
+}
+
+// Music Player Controls
+
+.sec1 {
+  background-color: rgba(25, 25, 25, 1);
+  @include layout_padding;
+  height: 10em;
+  box-shadow: 0px -7px 17px black;
+  @include flex(column, center);
+}
+
+// Music Player List
+
+.sec2 {
+  background-color: rgba(70,70,70,1);
+  @include layout_padding;
+  height: 21em;
+  @include flex(column, space-around);
+  box-shadow: 0px 17px 80px black;
+}

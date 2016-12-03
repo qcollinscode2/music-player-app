@@ -1,0 +1,19 @@
+body {
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+.musicplayer_container{
+  position: relative;
+  width: 50%;
+  min-width: 50%;
+  background-color: gray;
+  @include center;
+  box-shadow: 1px 10px 150px black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 6em 0.6em;
+}
