@@ -65,6 +65,14 @@ h1, h2, h3, h4, h5, p {
 .ico4 {
   color: rgba(220, 220, 220, 0.4); }
 
+.musicplayer_controls1 {
+  color: rgba(220, 220, 220, 0.4);
+  font-size: 2.4em; }
+
+.musicplayer_controls2 {
+  color: rgba(220, 220, 220, 0.4);
+  font-size: 2.4em; }
+
 body {
   background-color: rgba(30, 30, 30, 0.7);
   background-image: url(../../img/massivedoor.jpg);
@@ -147,7 +155,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 4em; }
+    margin-right: 4em;
+    position: relative;
+    height: 12em;
+    align-self: center; }
     .sec1 .musicplayer .musicplayer_timebarContainer {
       background-color: lightgrey;
       height: 0.5em;
@@ -168,6 +179,28 @@ body {
         background-color: #3c3c3c;
         transition: width 60s ease;
         border-radius: 15px; }
+    .sec1 .musicplayer .musicplayer_controls1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-self: center;
+      padding-top: 0.9em;
+      bottom: 0; }
+      .sec1 .musicplayer .musicplayer_controls1 .fa-stop {
+        position: absolute;
+        transition: 0.2s ease;
+        left: 4.6em; }
+      .sec1 .musicplayer .musicplayer_controls1 .fa-play {
+        position: relative;
+        transition: 0.2s ease; }
+    .sec1 .musicplayer .musicplayer_controls2 {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      top: 0; }
 
 .list_container {
   background-color: #464646;

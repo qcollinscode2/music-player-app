@@ -61,6 +61,9 @@
   .musicplayer {
     @include flex(column, center);
     margin-right: 4em;
+    position: relative;
+    height: 12em;
+    align-self: center;
     .musicplayer_timebarContainer {
       background-color: lightgrey;
       height: 0.5em;
@@ -83,6 +86,28 @@
         transition: width 60s ease;
         border-radius: 15px;
       }
+    }
+    .musicplayer_controls1 {
+      @include flex(row, space-between);
+      width: 100%;
+      align-self: center;
+      padding-top: 0.9em;
+      bottom: 0;
+      .fa-stop {
+        position: absolute;
+        transition: 0.2s ease;
+        left: 4.6em;
+      }
+      .fa-play {
+        position: relative;
+        transition: 0.2s ease;
+      }
+    }
+    .musicplayer_controls2 {
+      position: absolute;
+      @include flex(row, space-between);
+      width: 100%;
+      top: 0;
     }
   }
 }
