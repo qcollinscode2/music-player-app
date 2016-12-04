@@ -1,4 +1,4 @@
-# Javascript-MusicPlayer
+# Music Player
 <strong>Language: HTML/SCSS+Javascript</strong>
 
 **Phase:**
